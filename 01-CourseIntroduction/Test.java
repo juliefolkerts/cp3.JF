@@ -11,6 +11,6 @@ public class Test {
         Boolean firstYear = true;
         String studyFied = "Appled Informatics";
         String uni = "UEK";
-        System.out.println(name+"\n"+surname+"\n"+age+"\n"+studentId+"\n"+firstYear+"\n"+studyFied+"\n"+uni);
+        System.out.println(name+"\n"+surname+"\n"+age+"\n"+studentId+"\n"+"First Year Student: " + (firstYear ? "Yes" : "No")+"\n"+studyFied+"\n"+uni);
     }
 }
