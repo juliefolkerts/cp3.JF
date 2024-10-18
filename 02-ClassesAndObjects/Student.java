@@ -1,22 +1,25 @@
 public class Student {
-    String name;
-    int age;
+    String name;  
+    int age; 
+    String studentid;
+    boolean validid;
+    int semester;
+    double average_grade;
 
-    void sayHello(){
-        System.out.println("Hello from "+name);
+    
+    void sayHello() {
+    System.out.println("Hello from " + name);
     }
 
-    void displayName(){
-        System.out.println("name: "+name);
+    void displayName() {
+    System.out.println("Name: " + name);
     }
 
-    void displayAge(){
-        System.out.println("age: "+age);
+    void displayAge() {
+    System.out.println("Age: " + age);
     }
 
-    String studentID;
-    Boolean valid;
-    int semester_nr;
-    float average_grade;
-
+    void displayInfo() {
+        System.out.println("ID number: "+ studentid+ "\n" + "ID validity: "+ (validid ? "valid" : "invalid") + "\n" +"Semester: "+semester+"\n"+"Average grade: "+average_grade);
+    }
 }
