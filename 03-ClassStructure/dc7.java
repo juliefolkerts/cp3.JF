@@ -45,4 +45,3 @@ class CinemaTicket {
                "Price: PLN " + price; // Display price in PLN
     }
 }
-
