@@ -37,19 +37,33 @@ public class MyArray {
     public static boolean compare(int[] array1, int[] array2){
         int length1 = array1.length;
         int length2 = array2.length;
-        boolean answer = true;
         if (length1 != length2){
-            answer = false;
+            return false;
         }
         for (int i=0;i<length1;i++){
             if(array1[i] != array2[i]){
-                answer = false;
+                return false;
             }
         }
-        if (length1 != length2){
-            answer = false;
+    
+        return true;
+    }
+    //e
+    public static String different(int[] array1, int[] array2){
+        StringBuilder dif_nums = new StringBuilder();
+        for (int number : array1){
+            boolean gevonden = false;
+            for (int i=0; i < array2.length;i++){
+                if (number == array2[i]){
+                    gevonden = true;
+                    break;
+                }
+            }
+            if (!gevonden) {
+                dif_nums.append(number).append(","); // make sure no , at the end tho****
+            }
         }
-        return answer;
+        return dif_nums.toString();
     }
         
     } 

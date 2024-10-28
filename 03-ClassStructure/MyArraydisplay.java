@@ -1,7 +1,7 @@
 public class MyArraydisplay {
     public static void main(String[] args) {
-        int[] now = {1,2,3};
-        int[] now2 = {1,2,3};
+        int[] now = {1,2,3,4,5};
+        int[] now2 = {1,2};
         //MyArray calc = new MyArray();
         //a
         int a = MyArray.even(now);
@@ -16,7 +16,9 @@ public class MyArraydisplay {
         //d
         boolean d = MyArray.compare(now, now2);
         System.out.println("Array 1 and Array 2 are the same: "+d);
-        // not completely working, if array 2 is shorter then array 1
+        // e
+        String e = MyArray.different(now, now2);
+        System.out.println("Numbers from Array 1 that are not in 2: "+e);
     }
     
 }
