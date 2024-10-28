@@ -65,6 +65,19 @@ public class MyArray {
         }
         return dif_nums.toString();
     }
+    //f
+    public static boolean exist(int number, int[] array){
+        boolean answer = false;
+        for (int i=0; i<array.length;i++){
+            if (array[i]==number){
+                answer = true;
+                break;
+            }
+        }
+        return answer;
+    }
+    //g
+
         
     } 
 

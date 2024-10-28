@@ -19,6 +19,10 @@ public class MyArraydisplay {
         // e
         String e = MyArray.different(now, now2);
         System.out.println("Numbers from Array 1 that are not in 2: "+e);
+        //f
+        Boolean f = MyArray.exist(2, now);
+        System.out.println("Is 2 in Array 1: "+f);
+        //g
     }
     
 }
