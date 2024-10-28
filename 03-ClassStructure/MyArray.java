@@ -33,6 +33,24 @@ public class MyArray {
         answer.append(array[0]);
         return answer.toString();
         }
+    //d
+    public static boolean compare(int[] array1, int[] array2){
+        int length1 = array1.length;
+        int length2 = array2.length;
+        boolean answer = true;
+        if (length1 != length2){
+            answer = false;
+        }
+        for (int i=0;i<length1;i++){
+            if(array1[i] != array2[i]){
+                answer = false;
+            }
+        }
+        if (length1 != length2){
+            answer = false;
+        }
+        return answer;
+    }
         
     } 
 
