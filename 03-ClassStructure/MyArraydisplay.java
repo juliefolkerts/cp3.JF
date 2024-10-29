@@ -23,6 +23,8 @@ public class MyArraydisplay {
         Boolean f = MyArray.exist(2, now);
         System.out.println("Is 2 in Array 1: "+f);
         //g
+        int g = MyArray.secondMax(now);
+        System.out.println("Second larges number in Array 1: "+g);
     }
     
 }

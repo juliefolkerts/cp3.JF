@@ -77,7 +77,22 @@ public class MyArray {
         return answer;
     }
     //g
-
+    public static int secondMax(int[] array){
+        int max = 0;
+        int length = array.length;
+        for (int i =0; i < length;i++){
+            if (array[i]>max){
+                max = array[i];
+            }
+        }
+        int max2 = 0;
+        for (int j =0; j < length;j++){
+            if (array[j]>max2 && array[j]<max){
+                max2 = array[j];
+            }
+        }
+        return max2;
+    }
         
     } 
 
