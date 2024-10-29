@@ -2,6 +2,7 @@ public class MyArraydisplay {
     public static void main(String[] args) {
         int[] now = {1,2,3,4,5};
         int[] now2 = {1,2};
+        int[][] matrix = {{1,2,3},{4,5,6}};
         //MyArray calc = new MyArray();
         //a
         int a = MyArray.even(now);
@@ -25,6 +26,18 @@ public class MyArraydisplay {
         //g
         int g = MyArray.secondMax(now);
         System.out.println("Second larges number in Array 1: "+g);
+        //h
+        int h = MyArray.lastColumn(matrix);
+        System.out.println("Sum of last column of matrix: "+h);
+        //i
+        System.out.println("Last 2 columns swapped: ");
+        int[][] matrx = MyArray.swap(matrix);
+        for (int[] row : matrx) {
+            for (int j = 0; j < row.length; j++) {
+                System.out.print(row[j] + " ");
+            }
+            System.out.println();
+        }
     }
     
 }

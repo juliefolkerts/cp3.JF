@@ -96,11 +96,21 @@ public class MyArray {
     //h
     public static int lastColumn(int[][] array){
         int sum = 0;
-        for (int r=0; r<array.length; r++){
-            int lastcol = array[r].length;
-            sum += array[r][lastcol];
+        for (int[] row : array) {
+            int lastcol = (array[0].length)-1;
+            sum += row[lastcol];
         }
         return sum;
+    }
+    //i
+    public static int[][] swap(int[][] array){
+        int lastcol = (array[0].length)-1;
+        for (int[] row : array){
+            int temp_lastcol = row[lastcol];
+            row[lastcol]= row[lastcol-1] ;
+            row[lastcol-1]=temp_lastcol;
+        }
+        return array;
     }
         
     } 
