@@ -53,7 +53,6 @@ public class StudentGrades {
         double[] grades = {88.5, 92.0, 76.5, 85.0, 67.5};
         StudentGrades student = new StudentGrades("John Doe", grades);
         
-        // Display the student's record
         student.displaystudent("John Doe");
     }
 
