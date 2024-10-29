@@ -112,6 +112,16 @@ public class MyArray {
         }
         return array;
     }
+    //j
+    public static String two2one(int[][] array){
+        StringBuilder oneD = new StringBuilder();
+        for (int[] row : array){
+            for (int i=0;i<row.length;i++){
+                oneD.append(row[i]);
+            }
+        }
+        return oneD.toString();
+    }
         
     } 
 

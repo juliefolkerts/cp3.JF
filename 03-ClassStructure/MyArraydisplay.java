@@ -38,6 +38,9 @@ public class MyArraydisplay {
             }
             System.out.println();
         }
+        //j
+        String j = MyArray.two2one(matrix);
+        System.out.println("From 2D to 1D: "+j);
     }
     
 }
