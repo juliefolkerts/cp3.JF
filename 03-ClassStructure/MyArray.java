@@ -93,6 +93,15 @@ public class MyArray {
         }
         return max2;
     }
+    //h
+    public static int lastColumn(int[][] array){
+        int sum = 0;
+        for (int r=0; r<array.length; r++){
+            int lastcol = array[r].length;
+            sum += array[r][lastcol];
+        }
+        return sum;
+    }
         
     } 
 
