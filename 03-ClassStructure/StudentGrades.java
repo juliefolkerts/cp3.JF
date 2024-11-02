@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 public class StudentGrades {
 
@@ -53,6 +54,23 @@ public class StudentGrades {
         }
     }
 
+    public StudentGrades(String name){
+        this.studentName = name;
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Amount of grades: ");
+        int numberOfGrades = scan.nextInt();
+        this.grades = new double[numberOfGrades];
+
+        for (int i =0;i < numberOfGrades;i++){
+            System.out.println("Enter grade "+(i+1)+" :");
+            double grade = scan.nextDouble();
+            grades[i]=grade;
+
+        }
+        scan.close(); // why??
+    }
+
     public void displaystudent(String name){
         System.out.println("Student name: "+studentName); 
         System.out.println("Grades: "+ Arrays.toString(grades));
@@ -68,7 +86,7 @@ public class StudentGrades {
         
         student.displaystudent("John Doe");
 
-        StudentGrades student2 = new StudentGrades("Jane Doe", 5);
+        StudentGrades student2 = new StudentGrades("Jane Doe");
 
         student2.displaystudent("Jane Doe");
     }
