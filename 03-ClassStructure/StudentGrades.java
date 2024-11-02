@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Random;
 
 public class StudentGrades {
 
@@ -40,6 +41,18 @@ public class StudentGrades {
         double average = total/grades.length;
         return average;
     }
+
+    public StudentGrades(String name, int numberOfGrades){
+        this.studentName = name;
+        this.grades = new double[numberOfGrades];
+        Random random = new Random(); // creating instance of random class called "random"
+        for (int i=0;i<numberOfGrades;i++){
+            // grades[i] = random.nextDouble()*5;
+            double randgrade = (2.0+(random.nextDouble()*3));
+            grades[i] = (Math.round(randgrade)*10)/10.0; // It's only generating doubles like x.0
+        }
+    }
+
     public void displaystudent(String name){
         System.out.println("Student name: "+studentName); 
         System.out.println("Grades: "+ Arrays.toString(grades));
@@ -54,6 +67,10 @@ public class StudentGrades {
         StudentGrades student = new StudentGrades("John Doe", grades);
         
         student.displaystudent("John Doe");
+
+        StudentGrades student2 = new StudentGrades("Jane Doe", 5);
+
+        student2.displaystudent("Jane Doe");
     }
 
 }
