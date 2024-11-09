@@ -2,13 +2,13 @@ public class DrivingLicenseTest {
     public static void main(String[] args) {
         DrivingLicense dl = new DrivingLicense();
 
-        dl.setName("Jack");
-        dl.setSurname("Smith");
-        dl.setAddress("123 Main St");
-        dl.setPostalCode("12345");
-        dl.setCity("Springfield");
+        dl.setName("Ada");
+        dl.setSurname("Krzyczanowska");
+        dl.setAddress("Florianskiego");
+        dl.setPostalCode("30-066");
+        dl.setCity("Lodz");
         dl.setLicenseNumber("AB123456");
-        dl.setYearOfIssue(2020);
+        dl.setYearOfIssue(2025);
         dl.setLicenseCategory("B");
 
         System.out.println("Driver's Name: " + dl.getName());

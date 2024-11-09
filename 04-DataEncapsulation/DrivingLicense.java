@@ -65,12 +65,32 @@ public class DrivingLicense {
     }
 
     public void setYearOfIssue(int yearOfIssue) {
-        this.yearOfIssue = yearOfIssue;
+        int currentyear = 2024;
+        if (yearOfIssue >= 1980 && yearOfIssue<currentyear){
+            this.yearOfIssue = yearOfIssue;
+        } else {
+            System.out.println("Invalid year of issue, should be between 1980 and "+currentyear);
+        }
     }
+    // default year is set to 0, why not printing out the message
 
     public void setLicenseCategory(String licenseCategory) {
         this.licenseCategory = licenseCategory;
     }
 
-    
+
+    // Override the toString() method to display driving license information
+    @Override
+    public String toString() {
+        return """ 
+               Driving License Information: 
+               Name: """ + getName() + " " + getSurname() + "\n" +
+               "Address: " + getAddress() + ", " + getCity() + ", " + getPostalCode() + "\n" +
+               "License Number: " + getLicenseNumber() + "\n" +
+               "Year of Issue: " + getYearOfIssue() + "\n" +
+               "Category: " + getLicenseCategory();
+    }
+    // kurwa
+    // beginning of the code textblock created, /n doesn't work for some reason
 }
+
