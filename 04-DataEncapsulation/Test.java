@@ -6,5 +6,21 @@ public class Test {
         System.out.println("Point is on x axis: "+p.isX());
         System.out.println("Point is on y axis: "+p.isY());
         System.out.println(p.toString());
+
+        Book b = new Book();
+        b.setPages(3);
+        System.out.println(b.toString());
+        b.setPages(4);
+        System.out.println(b.toString());
+        b.setPages(-2);
+        System.out.println(b.toString());
+
+
+        //21
+        int[] arr1 = {3,2,-5,4,1,-7};
+        int[] arr2 = {5,2,7,4,2};
+        System.out.println(MyArrays.odd(arr1));
+        System.out.println(MyArrays.above(arr2));
+
     }
 }
