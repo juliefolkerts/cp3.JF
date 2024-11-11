@@ -1,24 +1,29 @@
+
+
 public class C3 {
-    public static boolean isAlphabet(String t){
-        String alphabet = "abcdefghijklmnopqrstuvwxyz";
-        boolean answer = true;
-        for (int i =0;i<(t.length()-1);i++){
-            int j =i+1;
-            int letter1 = alphabet.indexOf(t.charAt(i));
-            int letter2 = alphabet.indexOf(t.charAt(j));
-            if (letter1>letter2){
-                answer =false;
-                break;
+    static String alfabet = "abcdefghijklmnopqrstuvwxyz";
+    static boolean isAlphabet(String t){
+        //String alfabet = "abcdefghijklmnopqrstuvwxyz";
+        boolean answer = false;
+        for (int i = 0;i <t.length()-1;i++){
+            char letter1 = t.charAt(i);
+            char letter2 = t.charAt(i+1);
+            if (alfabet.indexOf(letter1)>alfabet.indexOf(letter2)){
+                answer = false;
+                //break;
             }
+            break;
         }
         return answer;
-    }
-    public static String hideText(String t){
-        String[] stars = new String[(t.length()-1)];
+    } 
+    static String hideText(String t){
+        String emp = "";
+        StringBuilder answer = new StringBuilder(emp);
+        answer.append(t.charAt(0));
         for (int i=1;i<t.length()-1;i++){
-            stars[i]="*";
+            answer.append("*");
         }
-        return t.charAt(0)+stars.toString()+t.charAt(t.length());
-
+        answer.append(t.charAt(t.length()));
+        return emp;
     }
 }
