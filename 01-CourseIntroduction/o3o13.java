@@ -115,6 +115,19 @@ public class o3o13 {
         }
         return matrix;
     }
+    public static int[] two2one(int[][] array){
+        int lengtharr = array[0].length * array.length;
+        int[] oneD = new int[lengtharr];
+        //int[] oneD = new int[lengtharr];
+        int i = 0;
+        for (int[] row : array){
+            for (int num : row){
+                oneD[i]=num;
+                i ++; 
+            }
+        }
+        return oneD;
+    }
 
 
     public static void main(String[] args) {
@@ -134,5 +147,6 @@ public class o3o13 {
         System.out.println(o3o13.secondMax(array2));
         System.out.println(o3o13.lastColumn(matrix));
         System.out.println(Arrays.deepToString(o3o13.swap(matrix)));
+        System.out.println(Arrays.toString(o3o13.two2one(matrix)));
     }
 }
