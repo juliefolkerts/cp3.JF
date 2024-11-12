@@ -85,11 +85,39 @@ public class o3o13 {
         }
         return secmax;
     }
+    public static int lastColumn(int[][] array){
+        int sum = 0;
+        int last = array[0].length-1;
+        for (int[] row : array){
+            sum += row[last];
+        }
+        return sum;
+        //int last = array[0].length-1;
+        //for (int num : array[last]){
+            //sum += array[last][num];
+        //
+    } 
+    public static int[][] swap(int[][] array){
+        //ArrayList<Integer> matrix = new ArrayList<>();
+        int rows = array.length;
+        int columns = array[0].length;
+        int[][] matrix = new int[rows][columns];
+        int last = array[0].length-1;
+        for (int[] row : array){
+            for (int i = 0;i<row.length;i++){
+                if (i == 0){
+                    matrix[row][i] == array[]
+                }
+            }
+        }
+        
+    }
 
 
     public static void main(String[] args) {
         int[] array1 = {1,-3,3,4,5,-9};
         int[] array2 = {1,2,4,4,-5};
+        int[][] matrix = {{1,1,2},{1,1,3},{1,1,4}};
         //o3o13 o = new o3o13();
         System.out.println(o3o13.even(array1));
         System.out.println(o3o13.even(array2));
@@ -101,5 +129,6 @@ public class o3o13 {
         System.out.println(o3o13.exist(2, array2));
         System.out.println(o3o13.exist(20, array2));
         System.out.println(o3o13.secondMax(array2));
+        System.out.println(o3o13.lastColumn(matrix));
     }
 }
