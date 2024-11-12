@@ -98,19 +98,22 @@ public class o3o13 {
         //
     } 
     public static int[][] swap(int[][] array){
-        //ArrayList<Integer> matrix = new ArrayList<>();
         int rows = array.length;
         int columns = array[0].length;
-        int[][] matrix = new int[rows][columns];
         int last = array[0].length-1;
-        for (int[] row : array){
-            for (int i = 0;i<row.length;i++){
-                if (i == 0){
-                    matrix[row][i] == array[]
+        int[][] matrix = new int[rows][columns];
+        for (int r = 0;r<matrix.length;r++){
+            for (int i = 0;i < matrix[r].length;i++){
+                if (i==0){
+                    matrix[r][i] = array[r][last];
+                } else if (i==last){
+                    matrix[r][i] = array[r][0];
+                } else {
+                    matrix[r][i] =array[r][i];
                 }
             }
         }
-        
+        return matrix;
     }
 
 
@@ -130,5 +133,6 @@ public class o3o13 {
         System.out.println(o3o13.exist(20, array2));
         System.out.println(o3o13.secondMax(array2));
         System.out.println(o3o13.lastColumn(matrix));
+        System.out.println(Arrays.deepToString(o3o13.swap(matrix)));
     }
 }
