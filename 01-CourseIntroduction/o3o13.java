@@ -70,11 +70,26 @@ public class o3o13 {
         }
         return answer;
     }
+    public static int secondMax(int[] array){
+        int secmax = 0;
+        int max = 0;
+        for (int i=0;i<array.length;i++){
+            if (array[i]>max){
+                max = array[i];
+            }
+        }
+        for (int i=0;i<array.length;i++){
+            if (array[i]>secmax && array[i]<max){
+                secmax = array[i];
+            }
+        }
+        return secmax;
+    }
 
 
     public static void main(String[] args) {
         int[] array1 = {1,-3,3,4,5,-9};
-        int[] array2 = {1,2,3,4,-5};
+        int[] array2 = {1,2,4,4,-5};
         //o3o13 o = new o3o13();
         System.out.println(o3o13.even(array1));
         System.out.println(o3o13.even(array2));
@@ -85,5 +100,6 @@ public class o3o13 {
         System.out.println(o3o13.different(array1, array2));
         System.out.println(o3o13.exist(2, array2));
         System.out.println(o3o13.exist(20, array2));
+        System.out.println(o3o13.secondMax(array2));
     }
 }
