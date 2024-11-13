@@ -23,13 +23,13 @@ public class C1 {
         return age;
     }
 
-    public boolean isAdult(){
-        boolean answer = false;
-        if(this.age >= 18){
-            answer = true;
-        }
-        return answer;
-    }
+    //public boolean isAdult(){
+        //boolean answer = false;
+        //if(this.age >= 18){
+            //answer = true;
+        //}
+        //return answer;
+    //}
     @Override
     public String toString(){
         return this.name+", "+this.age;
