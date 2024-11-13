@@ -32,7 +32,7 @@ public class C1 {
     }
     @Override
     public String toString(){
-        return this.name+","+this.age;
+        return this.name+", "+this.age;
     }
 
     public static void main(String[] args) {
