@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 public class ac15 {
     private ArrayList<String> shoppinglist = new ArrayList<String>();
 
@@ -7,6 +8,7 @@ public class ac15 {
     //}
 
     public void displayList(){
+        System.out.println("Shopping list:");
         for (String item : this.shoppinglist){
             System.out.println(item);
         }
@@ -16,6 +18,11 @@ public class ac15 {
     }
     public void add(String item){
         this.shoppinglist.add(item);
+    }
+    public void add_user(){
+        Scanner food = new Scanner(System.in);
+        System.out.println("Add to shopping list: ");
+        this.shoppinglist.add(food.nextLine());
     }
     public static void main(String[] args) {
         ac15 boodschappenlijstje = new ac15();
@@ -27,6 +34,9 @@ public class ac15 {
         boodschappenlijstje.displayList();
         boodschappenlijstje.listLength();
         boodschappenlijstje.add("Papryka");
+        boodschappenlijstje.displayList();
+        boodschappenlijstje.listLength();
+        boodschappenlijstje.add_user();
         boodschappenlijstje.displayList();
         boodschappenlijstje.listLength();
     }
