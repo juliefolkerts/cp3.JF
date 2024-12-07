@@ -35,7 +35,7 @@ class Book {
 }
 
 // Child Class: Ebook
-class Ebook extends Book {
+class Ebook extends Book9 {
     // Additional Attribute
     private String fileName;
 
@@ -66,7 +66,7 @@ class Ebook extends Book {
 public class dc11 {
     public static void main(String[] args) {
         // Create a Book
-        Book book = new Book("Pride and Prejudice", "Jane Austen");
+        Book9 book = new Book9("Pride and Prejudice", "Jane Austen");
 
         // Create two Ebooks
         Ebook ebook1 = new Ebook("Digital Fortress", "Dan Brown", "digital_fortress.pdf");

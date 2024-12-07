@@ -2,23 +2,25 @@
 
 public class Main {
     public static void main(String[] args) {
-        //private Book[] books;
-        Library library = new Library(5);
+        Book9 book1 = new Book9("Harper Lee", "To Kill a Mockingbird", 324);
+        Audiobook audio1 = new Audiobook(book1.getAuthor(), book1.getTitle(), book1.getPages(), 100, 44);
+        Ebook ebook1 = new Ebook(book1.getTitle(), book1.getAuthor(),book1.getPages(), "E-Book-1.pdf");
+        Book9 book2 = new Book9("John Doe", "The Great Gatsby", 180);
+        Audiobook audio2 = new Audiobook(book2.getTitle(), book2.getAuthor(),book2.getPages(), 0, 0);
+        Ebook ebook2 = new Ebook(book2.getTitle(), book2.getAuthor(),book2.getPages(), "E-Book-2.pdf");
 
-        Bookk book = new Bookk("1984", "George" ,6);
 
-        Ebook ebook1 = new Ebook("Digital Fortress", "Dan Brown", 7,"digital_fortress.pdf");
-        Ebook ebook2 = new Ebook("The Hobbit", "J.R.R. Tolkien", 77,  "the_hobbit.epub");
+        Libr library = new Libr();
 
-        Audiobook audiobook1 = new Audiobook("Becoming", "Michelle Obama", 6000, 1140, 30);
-        Audiobook audiobook2 = new Audiobook("The Subtle Art of Not Giving a F*ck",  "Mark Manson",23900339,  270, 45);
-
-        library.addBook(book);
+        library.addBook(book1);
+        library.addBook(audio1);
+        library.addBook(audio2);
         library.addBook(ebook1);
         library.addBook(ebook2);
-        library.addBook(audiobook1);
-        library.addBook(audiobook2);
-    }
+        audio1.display();
+        library.display();
+        //library.addBook(book2);
 
-    
+
+    }
 }

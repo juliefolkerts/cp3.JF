@@ -1,8 +1,8 @@
-public class Ebook extends Bookk {
+public class Ebook extends Book9 {
     private String filename;
 
-    public Ebook(String title, String author, int pages,String filename) {
-        super(title, author,pages);
+    public Ebook(String title, String author, int pages, String filename) {
+        super(title, author, pages);
         this.filename = filename;
     }
 

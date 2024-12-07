@@ -1,4 +1,4 @@
-public class Audiobook extends Book {
+public class Audiobook extends Book9 {
     private int minutes;
     private int seconds;
     public Audiobook(String title, String author, int pages, int minutes, int seconds) {
@@ -18,7 +18,8 @@ public class Audiobook extends Book {
     public int getSeconds() {
         return seconds;
     }
+    @Override
     public void display(){
-        System.out.printf("This is an audio book titled %d, written by %d, it lasts for %d minutes and %d seconds", getTitle(), getAuthor(), this.minutes, this.seconds);
+        System.out.printf("This is an audio book titled %s, written by %s, it lasts for %d minutes and %d seconds\n", getTitle(), getAuthor(), this.minutes, this.seconds);
     }
 }

@@ -29,7 +29,7 @@ class Library {
 public class dc13 {
     public static void main(String[] args) {
         // Create a Library with capacity for 5 books
-        Library library = new Library(5);
+        Libr library = new Libr(5);
 
         // Create a Book
         Book book = new Book("1984", "George Orwell");

@@ -1,8 +1,9 @@
-public class Book {
+public class Book9 {
     private String author;
     private String title;
     private int pages;
-    public Book(String author, String title, int pages) {
+    
+    public Book9(String author, String title, int pages) {
         this.author = author;
         this.title = title;
         this.pages = pages;
@@ -27,7 +28,7 @@ public class Book {
     }
 
     public void display(){
-        System.out.printf("This is a paper book titled %d the author is %d %\n", this.title, this.author);
+        System.out.printf("This is a paper book titled %s written by %s \n", this.title, this.author);
     }
 
     
