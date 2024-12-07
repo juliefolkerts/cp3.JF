@@ -5,7 +5,7 @@ public class Main {
         //private Book[] books;
         Library library = new Library(5);
 
-        Book book = new Book("1984", "George" ,6);
+        Bookk book = new Bookk("1984", "George" ,6);
 
         Ebook ebook1 = new Ebook("Digital Fortress", "Dan Brown", 7,"digital_fortress.pdf");
         Ebook ebook2 = new Ebook("The Hobbit", "J.R.R. Tolkien", 77,  "the_hobbit.epub");

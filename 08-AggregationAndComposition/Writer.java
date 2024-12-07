@@ -32,8 +32,8 @@ public class Writer{
         this.name = name;
         this.surname = surname;
     }
-
+    @Override
     public String toString(){
-        return "Author: "+this.name+"\n"+"age: "+this.age;
+        return "Author: "+this.name+"\n"+"Age: "+this.age;
     }
 }

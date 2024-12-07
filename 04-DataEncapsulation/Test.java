@@ -7,7 +7,7 @@ public class Test {
         System.out.println("Point is on y axis: "+p.isY());
         System.out.println(p.toString());
 
-        Book b = new Book();
+        Bookk b = new Bookk();
         b.setPages(3);
         System.out.println(b.toString());
         b.setPages(4);

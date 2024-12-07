@@ -1,4 +1,4 @@
-public class Book {
+public class Bookk {
     Writer writer;
     private String title;
     private int pages;
@@ -22,18 +22,19 @@ public class Book {
         return genre;
     }
 
-    public Book(Writer writer){
+    public Bookk(Writer writer){
         this.writer = writer;
     }
     
 
-    public Book(Writer writer, String title, int pages) {
+    public Bookk(Writer writer, String title, int pages) {
         this.writer = writer;
         this.title = title;
         this.pages = pages;
     }
+    @Override
     public String toString(){
-        return "Title: "+this.title.toString()+"\n"+this.writer.toString();
+        return "Title: "+this.title+"\n"+this.writer.toString();
     }
 
 

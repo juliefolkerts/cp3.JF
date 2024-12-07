@@ -1,4 +1,4 @@
-public class Ebook extends Book {
+public class Ebook extends Bookk {
     private String filename;
 
     public Ebook(String title, String author, int pages,String filename) {

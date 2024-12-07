@@ -38,8 +38,8 @@ class Book {
 public class dc10 {
     public static void main(String[] args) {
         // Create two books
-        Book book1 = new Book("To Kill a Mockingbird", "Harper Lee");
-        Book book2 = new Book("The Catcher in the Rye", "J.D. Salinger");
+        Bookk book1 = new Bookk("To Kill a Mockingbird", "Harper Lee");
+        Bookk book2 = new Bookk("The Catcher in the Rye", "J.D. Salinger");
 
         // Display book information
         System.out.println("Book 1:");
