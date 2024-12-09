@@ -7,7 +7,7 @@ public class Main {
         Ebook ebook1 = new Ebook(book1.getAuthor(), book1.getTitle(),book1.getPages(), "E-Book-1.pdf");
         Book9 book2 = new Book9("John Doe", "The Great Gatsby", 180);
         Audiobook audio2 = new Audiobook(book2.getAuthor(), book2.getTitle(),book2.getPages(), 0, 0);
-        Ebook ebook2 = new Ebook(book2.getAuthor(), book2.getTite(),book2.getPages(), "E-Book-2.pdf");
+        Ebook ebook2 = new Ebook(book2.getAuthor(), book2.getTitle(),book2.getPages(), "E-Book-2.pdf");
 
 
         Libr library = new Libr();
