@@ -1,17 +1,10 @@
-//package 11-AbstractClasses;
-
-public abstract class Message {
-    String text;
-
-    Message() {
-        text = "";
+public abstract class Message{
+    private String text;
+    public  Message(){
+        this.text ="";
     }
-    Message(String txt){
-        text = txt;
-    }
-    public int charNumber(){
-    }
-    public abstract void send(){
+    public Message(String t){
+        this.text = t;
     }
 
     public void setText(String text) {
@@ -21,7 +14,9 @@ public abstract class Message {
     public String getText() {
         return text;
     }
-
-    
+    public int charNumber(){
+        return text.length();
+    }
+    public abstract void send();
     
 }
