@@ -8,11 +8,16 @@ public class C1 {
         this.surname = surname;
     }
     public String answer(C1 person){
-        Char f = person.name.charAt(0);
-        Char s = person.surname.charAt(0);
-        Char F = f.toUpperCase();
-        Char S = s.toUpperCase();
-        return  F+S;
+        char f = person.name.charAt(0);
+        char s = person.surname.charAt(0);
+        char F = Character.toUpperCase(f);
+        char S = Character.toUpperCase(s);
+        return  ""+F+S;
     }
-    
+    public static void main(String[] args) {
+        C1 person1 = new C1("john", "doe");
+        C1 person2 = new C1("Jane", "smith");
+
+        System.out.println(person1.answer(person2));
+    }
 }
